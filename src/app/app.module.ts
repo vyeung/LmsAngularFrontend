@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
-import { FooterComponent } from './layout/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
 import { AdminComponent } from './admin/admin.component';
@@ -16,13 +15,13 @@ import { BranchesComponent } from './admin/branches/branches.component';
 import { BorrowersComponent } from './admin/borrowers/borrowers.component';
 import { DueDateComponent } from './admin/due-date/due-date.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { HeaderComponent } from './layout/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LayoutComponent,
-    FooterComponent,
     LoginComponent,
     AdminLayoutComponent,
     AdminComponent,
@@ -32,7 +31,8 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     BranchesComponent,
     BorrowersComponent,
     DueDateComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
