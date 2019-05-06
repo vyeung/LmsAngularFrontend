@@ -1,0 +1,63 @@
+.backgroundImg {
+  position: absolute;
+  z-index: -10;  /*put image behind everything*/
+  height: 100%;
+  width: 100%;
+}
+
+.welcomeDiv {
+  padding-top: 150px;
+  text-align: center;
+}
+.welcomeMsg {
+  font-size: 40px;
+  text-decoration: underline;
+}
+.userType {
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px 50px 50px 50px;
+  padding: 20px;
+}
+
+.admin {
+  padding: 10px 0px;
+}
+.admin button {
+  background: purple;
+  padding: 15px 20px;
+  font-size: 25px;
+}
+.admin button:hover {
+  background: #5f015f;
+}
+
+.librarian {
+  padding: 10px 0px;
+}
+.librarian button {
+  background: orange;
+  padding: 15px 20px;
+  font-size: 25px;
+}
+.librarian button:hover {
+  background: #cf8702;
+}
+
+.borrower {
+  padding: 10px 0px;
+}
+.borrower button {
+  background: salmon;
+  padding: 15px 20px;
+  font-size: 25px;
+}
+.borrower button:hover {
+  background: #d65142;
+}
