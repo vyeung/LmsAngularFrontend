@@ -1,3 +1,15 @@
-<p>
-  admin-layout works!
-</p>
+<div class="adminDash">
+  <div class="adminDash_left">
+    <nav class="nav flex-column">
+      <a class="nav-link" routerLink="/admin/books">All Books</a>
+      <a class="nav-link" routerLink="/admin/authors">All Authors</a>
+      <a class="nav-link" routerLink="/admin/publishers">All Publishers</a>
+      <a class="nav-link" routerLink="/admin/branches">All Branches</a>
+      <a class="nav-link" routerLink="/admin/borrowers">All Borrowers</a>
+      <a class="nav-link" routerLink="/admin/dueDate">Change Due Date</a>
+    </nav>
+  </div>
+  <div class="adminDash_right">
+    <router-outlet></router-outlet>
+  </div>
+</div>
