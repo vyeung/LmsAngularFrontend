@@ -3,3 +3,81 @@
   font-size: 30px;
   font-weight: bold;
 }
+
+/*********************GENERAL TABLE PAGE*************************/
+
+.adminTable {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.adminTable h3 {
+  margin: 0;
+}
+
+.adminTable td a.edit {
+  cursor: pointer;
+  color: #FFC107;
+}
+
+.adminTable td a.delete {
+  cursor: pointer;
+  color: red;
+}
+
+.table-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.addButton {
+  display: flex;
+  background: green;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.addButton:hover {
+  background: #01ac01;
+}
+.addButton i {
+  font-size: 21px;
+  padding-right: 5px;
+}
+
+.table_buttons {
+  text-align: center;
+}
+.table_buttons a:first-child {
+  padding-right: 10%;
+}
+
+/****************GENERAL ADD AND EDIT PAGE*********************/
+
+.adminTable form {
+  border: 1px solid #c2b4b4;
+  padding: 20px 40px;
+}
+
+.adminAddSpace {
+  margin-bottom: 20px;
+}
+
+.submit_bttns {
+  margin: 40px 0px;
+  width: 100%;
+  text-align: center;
+}
+.cancel {
+  padding: 8px 40px;
+  margin-right: 20px;
+  background: #ce0707;
+}
+.cancel:hover {
+  background: #fc0606;
+}
+.update {
+  padding: 8px 40px;
+}
