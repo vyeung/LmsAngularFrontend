@@ -1,0 +1,31 @@
+<div class="adminTable">
+  <h3>Edit Publisher</h3>
+  <div class="adminAddSpace"></div>
+  <form>
+    <div class="form-group row">
+      <label for="name" class="col-sm-2 col-form-label">Publisher's New Name</label>
+      <div class="col-sm-10">
+        <input name="name" type="text" class="form-control" [(ngModel)]="selectedpublisherName">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="address" class="col-sm-2 col-form-label">Publisher's New Address</label>
+      <div class="col-sm-10">
+        <input name="address" type="text" class="form-control" [(ngModel)]="selectedpublisherAddress">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="phone" class="col-sm-2 col-form-label">Publisher's New Phone</label>
+      <div class="col-sm-10">
+        <input name="phone" type="text" class="form-control" [(ngModel)]="selectedpublisherPhone">
+      </div>
+    </div>
+  </form>
+ 
+  <div class="submit_bttns">
+    <a routerLink="/admin/publishers">
+      <button class="cancel">Cancel</button>
+    </a>
+      <button class="update" (click)="updatePublisherHandler()">Update Publisher</button>
+  </div>
+</div>
