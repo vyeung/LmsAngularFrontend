@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -16,6 +18,8 @@ import { BorrowersComponent } from './admin/borrowers/borrowers.component';
 import { DueDateComponent } from './admin/due-date/due-date.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { AddBookComponent } from './admin/books/add-book/add-book.component';
+import { EditBookComponent } from './admin/books/edit-book/edit-book.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +36,15 @@ import { HeaderComponent } from './layout/header/header.component';
     BorrowersComponent,
     DueDateComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddBookComponent,
+    EditBookComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
