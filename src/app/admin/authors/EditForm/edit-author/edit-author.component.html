@@ -1,0 +1,20 @@
+<div class="adminTable">
+  <h3>Edit Author</h3>
+  <div class="adminAddSpace"></div>
+  <form>
+      <div class="form-group row">
+        <label for="authorName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="tea" [(ngModel)]="name" placeholder="Name...">
+        </div>
+      </div>
+  </form>
+ 
+  <div class="submit_bttns">
+    <a routerLink="/admin/authors">
+      <button class="cancel">Cancel</button>
+    </a>
+      <button class="update" (click)="submitHandler()">Update Book</button>
+  </div>
+</div>
+
