@@ -1,3 +1,31 @@
-<p>
-  due-date works!
-</p>
+<div class="adminTable table-responsive">
+  <div class="table-title">
+    <h3>Current Book Loans</h3>
+  </div>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Book's Title</th>
+        <th scope="col">Branch's Name</th>
+        <th scope="col">Borrower's Name</th>
+        <th scope="col">Date Out</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let loan of loans; index as i">
+        <td >{{loan.books.title}}</td>
+        <td>{{loan.libBranch.branchName}}</td>
+        <td>{{loan.borrower.name}}</td>
+        <td>{{loan.dateOut}}</td>
+        <td>{{loan.dueDate}}</td>
+        <td class="table_buttons">
+          <a class="edit" [routerLink]="['/admin/editdueDate', loan.books.bookId, loan.libBranch.branchId, loan.borrower.cardNo]" title="Edit Due Date" data-toggle="tooltip">
+            <i class="material-icons">edit</i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
