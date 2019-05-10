@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +20,10 @@ import { BorrowersComponent } from './admin/borrowers/borrowers.component';
 import { DueDateComponent } from './admin/due-date/due-date.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { EditAuthorComponent } from './admin/authors/EditForm/edit-author/edit-author.component';
+import { AddAuthorComponent } from './admin/authors/add-author/add-author.component';
+import { AddBorrowerComponent } from './admin/borrowers/add-borrower/add-borrower.component';
+import { EditBorrowerComponent } from './admin/borrowers/edit-borrower/edit-borrower.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +40,18 @@ import { HeaderComponent } from './layout/header/header.component';
     BorrowersComponent,
     DueDateComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    EditAuthorComponent,
+    AddAuthorComponent,
+    AddBorrowerComponent,
+    EditBorrowerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
