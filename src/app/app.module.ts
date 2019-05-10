@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
-import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from "@angular/forms";
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -24,6 +23,9 @@ import { EditAuthorComponent } from './admin/authors/EditForm/edit-author/edit-a
 import { AddAuthorComponent } from './admin/authors/add-author/add-author.component';
 import { AddBorrowerComponent } from './admin/borrowers/add-borrower/add-borrower.component';
 import { EditBorrowerComponent } from './admin/borrowers/edit-borrower/edit-borrower.component';
+import { AddBookComponent } from './admin/books/add-book/add-book.component';
+import { EditBookComponent } from './admin/books/edit-book/edit-book.component';
+
 
 @NgModule({
   declarations: [
@@ -44,13 +46,14 @@ import { EditBorrowerComponent } from './admin/borrowers/edit-borrower/edit-borr
     EditAuthorComponent,
     AddAuthorComponent,
     AddBorrowerComponent,
-    EditBorrowerComponent
+    EditBorrowerComponent,
+    AddBookComponent,
+    EditBookComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule,
     FormsModule
   ],
   providers: [],
