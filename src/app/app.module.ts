@@ -25,7 +25,11 @@ import { AddBorrowerComponent } from './admin/borrowers/add-borrower/add-borrowe
 import { EditBorrowerComponent } from './admin/borrowers/edit-borrower/edit-borrower.component';
 import { AddBookComponent } from './admin/books/add-book/add-book.component';
 import { EditBookComponent } from './admin/books/edit-book/edit-book.component';
-
+import { EditPublisherComponent } from './admin/publishers/edit-publisher/edit-publisher.component';
+import { AddPublisherComponent } from './admin/publishers/add-publisher/add-publisher.component';
+import { EditDueDateComponent } from './admin/due-date/edit-due-date/edit-due-date.component';
+import { AddBranchComponent } from './admin/branches/add-branch/add-branch.component';
+import { EditBranchComponent } from './admin/branches/edit-branch/edit-branch.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,12 @@ import { EditBookComponent } from './admin/books/edit-book/edit-book.component';
     AddBorrowerComponent,
     EditBorrowerComponent,
     AddBookComponent,
-    EditBookComponent
+    EditBookComponent,
+    EditPublisherComponent,
+    AddPublisherComponent,
+    AddBranchComponent,
+    EditBranchComponent,
+    EditDueDateComponent,
   ],
   imports: [
     BrowserModule,
