@@ -14,7 +14,7 @@ import { EditDueDateComponent } from './admin/due-date/edit-due-date/edit-due-da
 import { DueDateComponent } from './admin/due-date/due-date.component';
 import { AddBranchComponent } from './admin/branches/add-branch/add-branch.component';
 import { EditBranchComponent } from './admin/branches/edit-branch/edit-branch.component';
-import { EditAuthorComponent } from './admin/authors/EditForm/edit-author/edit-author.component';
+import { EditAuthorComponent } from './admin/authors/edit-author/edit-author.component';
 import { AddAuthorComponent } from './admin/authors/add-author/add-author.component';
 import { AddBorrowerComponent } from './admin/borrowers/add-borrower/add-borrower.component';
 import { EditBorrowerComponent } from './admin/borrowers/edit-borrower/edit-borrower.component';

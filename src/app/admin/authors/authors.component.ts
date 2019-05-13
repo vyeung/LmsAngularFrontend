@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { environment } from '../../../environments/environment';
 import { AdminService } from '../../services/admin.service';
-import { EditAuthorComponent } from './EditForm/edit-author/edit-author.component';
 
 @Component({
   selector: 'app-authors',
@@ -12,12 +9,10 @@ import { EditAuthorComponent } from './EditForm/edit-author/edit-author.componen
 export class AuthorsComponent implements OnInit {
 
   constructor(
-    private http: HttpClient,
     private adminService: AdminService,
   ) {}
 
   authors: any;
-  private allItems: any[];
 
   ngOnInit() {
     this.getAllAuthors();
@@ -34,9 +29,4 @@ export class AuthorsComponent implements OnInit {
       this.getAllAuthors();
     });
   }
-
-  editAuthorClickHandler(author){
-    
-  }
-
 }
