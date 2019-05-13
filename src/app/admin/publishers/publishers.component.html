@@ -21,7 +21,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let publisher of publishers; index as i">
-        <th scope="row">{{i+1}}</th>
+        <th scope="row">{{publisher.publisherId}}</th>
         <td>{{publisher.publisherName}}</td>
         <td>{{publisher.publisherAddress}}</td>
         <td>{{publisher.publisherPhone}}</td>
