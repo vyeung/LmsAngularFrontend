@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { AdminService } from '../../services/admin.service';
 
 @Component({
@@ -10,7 +9,6 @@ import { AdminService } from '../../services/admin.service';
 export class DueDateComponent implements OnInit {
 
   constructor(
-    private http: HttpClient,
     private adminService: AdminService
   ) {}
 
@@ -23,9 +21,6 @@ export class DueDateComponent implements OnInit {
   getAllLoans() {
     this.adminService.getAllLoansDetails('').subscribe(res => {
       this.loans = res;
-
-  });
-
-}
-
+    });
+  }
 }
