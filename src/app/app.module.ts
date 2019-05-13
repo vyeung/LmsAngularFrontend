@@ -17,7 +17,6 @@ import { PublishersComponent } from './admin/publishers/publishers.component';
 import { BranchesComponent } from './admin/branches/branches.component';
 import { BorrowersComponent } from './admin/borrowers/borrowers.component';
 import { DueDateComponent } from './admin/due-date/due-date.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { EditAuthorComponent } from './admin/authors/EditForm/edit-author/edit-author.component';
 import { AddAuthorComponent } from './admin/authors/add-author/add-author.component';
@@ -45,7 +44,6 @@ import { EditBranchComponent } from './admin/branches/edit-branch/edit-branch.co
     BranchesComponent,
     BorrowersComponent,
     DueDateComponent,
-    DashboardComponent,
     HeaderComponent,
     EditAuthorComponent,
     AddAuthorComponent,
