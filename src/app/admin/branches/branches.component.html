@@ -20,7 +20,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let branch of branches; index as i">
-        <th scope="row">{{i+1}}</th>
+        <th scope="row">{{branch.branchId}}</th>
         <td>{{branch.branchName}}</td>
         <td>{{branch.branchAddress}}</td>
         <td class="table_buttons">
